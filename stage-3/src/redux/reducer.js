@@ -19,7 +19,7 @@ export default function reducer(state=initialState, action) {
             return Object.assign({}, state, {loading: true});
 
         case GET_ALL_PRODUCTS_FULFILLED:
-            return Object.assign({}, state, {loading: false, products: action.payload})
+            return Object.assign({}, state, {loading: false, products: action.payload});
 
         case ADD_TO_SHOPPING_CART:
             return Object.assign({}, state, {shoppingCart: [...state.shoppingCart, action.payload]});
